@@ -9,7 +9,6 @@ public class Problematica1 {
 
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
-
         int contador = 1;
         double promedad = 0;
         double promesta = 0;
@@ -54,6 +53,11 @@ public class Problematica1 {
             }
 
             contador++;
+            if (salida.equals("si")) {
+                bandera = false;
+            }
+            contador = contador + 1;
+
         }
 
         int totalJugadores = contador - 1;
